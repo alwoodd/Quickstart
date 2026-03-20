@@ -17,10 +17,10 @@ import org.firstinspires.ftc.teamcode.SwyftDrivetrain;
 
 public class Constants {
     public static FollowerConstants followerConstants = new FollowerConstants()
-            .mass(4.54)
+            .mass(4.452)
             .forwardZeroPowerAcceleration(-33)
             .lateralZeroPowerAcceleration(-48.24)
-            .headingPIDFCoefficients(new PIDFCoefficients(.44, 0, 0, .025))
+            .headingPIDFCoefficients(new PIDFCoefficients(.35, 0, .01, .024))
             .translationalPIDFCoefficients(new PIDFCoefficients(.025,0,0,.019))
             .drivePIDFCoefficients(new FilteredPIDFCoefficients(0, 0, 0, .6, .15))
             .centripetalScaling(.0004);
